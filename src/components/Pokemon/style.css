@@ -1,0 +1,142 @@
+.pokemonAtivo{
+    background-color: var(--corPrincipal);
+    border-radius: 10px;    
+    box-shadow: 10px 10px 20px var(--cinza100);
+    font-size: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
+}
+
+.types > div{
+    margin: 0 5px;
+    padding: 10px 15px;
+    border: 1px inset ;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px var(--cinza100);
+    text-shadow: 3px 3px 10px whitesmoke
+}
+
+.grassContainer, .types > div.grass{
+    background-color: var(--grass);
+    border-color: var(--grass);
+}
+
+.fireContainer, .types > div.fire{
+    background-color: var(--fire);
+    border-color: var(--fire);
+}
+
+.waterContainer, .types > div.water{
+    background-color: var(--water);
+    border-color: var(--water);
+}
+
+.bugContainer, .types > div.bug{
+    background-color: var(--bug);
+    border-color: var(--bug);
+}
+
+.poisonContainer, .types > div.poison{
+    background-color: var(--poison);
+    border-color: var(--poison);
+}
+
+.flyingContainer, .types > div.flying{
+    background-color: var(--flying);
+    border-color: var(--flying);
+}
+
+.normalContainer, .types > div.normal{
+    background-color: var(--normal);
+    border-color: var(--normal);
+}
+
+.electricContainer, .types > div.electric{
+    background-color: var(--electric);
+    border-color: var(--electric);
+}
+
+.groundContainer, .types > div.ground{
+    background-color: var(--ground);
+    border-color: var(--ground);
+}
+
+.fairyContainer, .types > div.fairy{
+    background-color: var(--fairy);
+    border-color: var(--fairy);
+}
+
+.darkContainer, .types > div.dark{
+    background-color: var(--dark);
+    border-color: var(--dark);
+}
+
+.ghostContainer, .types > div.ghost{
+    background-color: var(--ghost);
+    border-color: var(--ghost);
+}
+
+.psychicContainer, .types > div.psychic{
+    background-color: var(--psychic);
+    border-color: var(--psychic);
+}
+
+.fightingContainer, .types > div.fighting{
+    background-color: var(--fighting);
+    border-color: var(--fighting);
+}
+
+.rockContainer, .types > div.rock{
+    background-color: var(--rock);
+    border-color: var(--rock);
+}
+
+.dragonContainer, .types > div.dragon{
+    background-color: var(--dragon);
+    border-color: var(--dragon);
+}
+
+.steelContainer, .types > div.steel{
+    background-color: var(--steel);
+    border-color: var(--steel);
+}
+
+.pokemonAtivo h2{
+    margin: 10px 0;
+    font-size: 3.5rem;
+    text-shadow: 3px 3px 10px var(--cinza100)
+}
+
+.pokemonAtivo figure{
+    width: 300px;
+}
+
+.pokemonAtivo figure img{
+    width: 100%;
+    filter: drop-shadow(7px 7px 10px var(--cinza100))
+}
+
+.pokemonAtivo p{
+    margin: 0 0 15px;
+    font-weight: 600;
+}
+
+.types{
+    display: flex;
+}
+
+.pokemonAtivo button{
+    margin: 20px 0 10px;
+    padding: 15px 25px;
+    width: 90%;
+    border-radius: 10px;
+    border-color: red;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: var(--cinza100);
+    background: var(--gradient);
+    text-shadow: 3px 3px 10px var(--cinza100);
+}

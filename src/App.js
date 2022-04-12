@@ -1,25 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import './Global.css';
+import { useState } from 'react';
+import PokemonData from './components/Pokemon';
+import Pokedex from './components/Pokedex';
 
-function App() {
+export default function App() {
+  const [pokemons, setPokemons] = useState([])
+  const [info, setInfo] = useState([])
+  const [page, setPage] = useState('https://pokeapi.co/api/v2/pokemon/?limit=18 ')
+  const [pokemonAtivo, setPokemonAtivo] = useState({ativo:false, pokemon:{}})
+  
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Pokédex</h1>        
       </header>
+      {pokemonAtivo.ativo ? <PokemonData pokemon={pokemonAtivo.pokemon} setPokemonAtivo={setPokemonAtivo}/> : <Pokedex pokemons={pokemons} setPokemons={setPokemons} info={info} setInfo={setInfo} page={page} setPage={setPage} setPokemonAtivo={setPokemonAtivo}/>}
     </div>
   );
 }
-
-export default App;
